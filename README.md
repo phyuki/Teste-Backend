@@ -9,6 +9,11 @@ As requisições HTTP respeitam o padrão:
 * GET: Responsável pela consulta e obtenção dos dados
   - Tanto para a consulta de um livro ou gênero específico pelo seu ID ou por todos os objetos
 * POST: Armazenar novos dados/entidades
+  - Deve-se passar para a API o objeto JSON contendo as informações do objeto que se deseja cadastrar
+  - Para armazenar um livro, deve haver seu gênero previamente cadastrado.
 * PUT: Atualização de um objeto já existente
-* DELETE: Remoção de um objeto existente
+  - "api/books/{id_do_livro}" ou "api/genres/{id_do_genero}"
+  - Deve-se passar para a API o objeto JSON contendo as informações do que se quer atualizar
+* DELETE: Remoção de um objeto existente ("api/books/{id_do_livro}" ou "api/genres/{id_do_genero}")
+  - "api/books/{id_do_livro}" ou "api/genres/{id_do_genero}"
 
