@@ -1,28 +1,13 @@
-# Challenge 2: Register of Compass Scholarship Program classes
+# Teste Técnico - Sistema Backend para CRUD
 
-The goal in this technical challenge is to develop a RESTful API, which is capable of handling the basic operations of the four HTTP verbs: GET, POST, PUT and DELETE. For the development of the API, the **Java** programming language will be used in conjunction with the **Spring Boot** framework and the **MySQL** database. Additionally, other relevant dependencies will be incorporated for specific purposes, such as testing and documentation, ensuring a comprehensive solution that adheres to RESTful standards.
-## Implemented features
-
-* CRUD (Create, Read, Update, Delete, Patch)  
-* OpenAPI (using Swagger)  
-* ProblemDetails [(RFC 7807)](https://datatracker.ietf.org/doc/html/rfc7807)  
-* HATEOAS  
-* Unit Tests (JUnit 5, Mockito)  
-* Integration Tests (MockMvc)  
+O objetivo do teste consiste em desenvolver um sistema backend capaz de realizar as operações do CRUD (Create, Read, Update e Delete) para um sistema de gerenciamento de uma livraria. Deve-se catalogar as informações básicas de um livro e de um gênero literário, respeitando a cardinalidade de um para muitos, onde um gênero pode pertencer a vários livros e um livro se relaciona apenas com um gênero.
+Foi utilizado o framework Spring Boot com a linguagem Java para desenvolver uma API RESTful com comunicação com o banco de dados in-memory H2 integrado ao próprio framework.
 
 ## Modeling
-### Class diagram
-![Class diagram](https://raw.githubusercontent.com/kia735/Challenge_2/main/docs/class_diagram.png)
+O mapeamento dos endpoints segue o padrão REST com o estilo genérico "api/books" para livros e "api/genres" para os gêneros literários.
+As requisições HTTP respeitam o padrão: 
+* GET: Responsável pela consulta e obtenção dos dados
+* POST: Armazenar novos dados/entidades
+* PUT: Atualização de um objeto já existente
+* DELETE: Remoção de um objeto existente
 
-### Database diagram
-![Database diagram](https://raw.githubusercontent.com/kia735/Challenge_2/main/docs/database_diagram.png)
-
-## API documentation
-To access the API documentation, it is necessary to start the application and then access the specified endpoint: **/swagger-ui/index.html.** This route will provide an interactive interface that details all relevant information about the API, including available endpoints, accepted parameters, and response formats.
-
-## Updating Features
-### Flyway
-With Flyway framework, this application guarantees an evolution of database schemas in an automated and controlled way and promote application versioning during development.
-
-### CRUD Implementation with Records
-Due to the ease and safety of using records within Java applications, it is possible to use records as DTOs to transfer data between layers. 
