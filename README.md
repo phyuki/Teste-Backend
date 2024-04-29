@@ -8,12 +8,14 @@ O mapeamento dos endpoints segue o padrão REST com o estilo genérico "api/book
 As requisições HTTP respeitam o padrão: 
 * GET: Responsável pela consulta e obtenção dos dados
   - Tanto para a consulta de um livro ou gênero específico pelo seu ID ou por todos os objetos
+  - "api/books/{id_do_livro}" ou "api/genres/{id_do_genero}" -> Para obter de um específico
+  - "api/books" ou "api/genres" -> Para obter todos
 * POST: Armazenar novos dados/entidades
   - Deve-se passar para a API o objeto JSON contendo as informações do objeto que se deseja cadastrar
   - Para armazenar um livro, deve haver seu gênero previamente cadastrado.
 * PUT: Atualização de um objeto já existente
-  - "api/books/{id_do_livro}" ou "api/genres/{id_do_genero}"
   - Deve-se passar para a API o objeto JSON contendo as informações do que se quer atualizar
+  - "api/books/{id_do_livro}" ou "api/genres/{id_do_genero}"
 * DELETE: Remoção de um objeto existente 
   - "api/books/{id_do_livro}" ou "api/genres/{id_do_genero}"
 
