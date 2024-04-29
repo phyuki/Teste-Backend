@@ -14,6 +14,6 @@ As requisições HTTP respeitam o padrão:
 * PUT: Atualização de um objeto já existente
   - "api/books/{id_do_livro}" ou "api/genres/{id_do_genero}"
   - Deve-se passar para a API o objeto JSON contendo as informações do que se quer atualizar
-* DELETE: Remoção de um objeto existente ("api/books/{id_do_livro}" ou "api/genres/{id_do_genero}")
+* DELETE: Remoção de um objeto existente 
   - "api/books/{id_do_livro}" ou "api/genres/{id_do_genero}"
 
