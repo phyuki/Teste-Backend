@@ -7,6 +7,7 @@ Foi utilizado o framework Spring Boot com a linguagem Java para desenvolver uma 
 O mapeamento dos endpoints segue o padrão REST com o estilo genérico "api/books" para livros e "api/genres" para os gêneros literários.
 As requisições HTTP respeitam o padrão: 
 * GET: Responsável pela consulta e obtenção dos dados
+  ** Tanto para a consulta de um livro ou gênero específico pelo seu ID ou por todos os objetos
 * POST: Armazenar novos dados/entidades
 * PUT: Atualização de um objeto já existente
 * DELETE: Remoção de um objeto existente
